@@ -1,0 +1,302 @@
+:root{
+   --branco1:#DEDEDE;
+   --branco2: #c9c1d1;
+   --preto1: #242424;
+   --preto2: #424242;
+   --cinza: #888888;
+
+   --cor-base1:#600ccb;
+   --cor-base2:#342fb9;
+
+   --margem-vertical-grande: 23vh;
+   --margem-vertical-pequena: 7vh;
+
+   --fonte-grande:1.9rem;
+   --fonte-media:1.3rem;
+   --fonte-pequena:1rem;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+   overflow: hidden;
+}
+
+.container{
+   width: 100%;
+   height: 100%;
+   overflow: hidden;
+}
+.paginas{
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+   height: 100%;
+}
+
+.linha{
+   display: flex;
+   height: 100%;
+   width: 200%;
+}
+
+.pagina{   
+   width: 100vw;
+   height: 100vh;
+   transition: 0.6s;   
+}
+
+.um{
+   background-image: linear-gradient(103deg, var(--cor-base2) 93%,var(--branco2)97%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.dois{
+   background-image: linear-gradient(-103deg, var(--cor-base1) 93%,var(--branco2)97%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: var(--margem-vertical-pequena);
+}
+
+.tres{
+   background-image: linear-gradient(77deg, var(--cor-base2) 93%,var(--branco2)97%);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15vh;
+   padding: 5vh;
+}
+
+.quatro{
+   background-image: linear-gradient(-77deg, var(--cor-base1) 93%,var(--branco2)97%);
+   display: flex;
+   align-items: center;
+}
+
+.quatro button{
+   margin: 0 5vh;
+}
+
+.banner{
+   background-image: url("../img/4142125.jpg");
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 100%;
+   height: 22vh;
+   display: flex;
+   justify-content: center;
+   margin-bottom: var(--margem-vertical-pequena);
+}  
+
+.foto-caio{
+   width: 270px;
+   height: 270px;
+   object-fit: cover;
+   object-position: 0 -90px;
+   border-radius: 50%;
+   border: 6px solid var(--cor-base2);
+   transform: translateX(-36vw) translateY(2vh);
+}
+
+.info-basica{
+   margin-bottom: var(--margem-vertical-grande);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.info-basica p{
+   color: var(--branco1);
+   font-size: var(--fonte-grande);
+   font-weight: bold;
+   text-align: center;
+
+   overflow: hidden;
+   border-right: .15em solid var(--branco1); 
+   white-space: nowrap; /* Keeps the content on a single line */
+   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+   letter-spacing: .15em; /* Adjust as needed */
+}
+
+.div-nome{
+   width: 14rem;
+}
+
+p{
+   color: var(--branco1);
+   font-size: var(--fonte-media);
+}
+
+.nome{
+   animation: 
+    typing 10s steps(40, end) infinite alternate,
+    blink-caret .75s step-end infinite;
+}
+
+.profissao{
+   animation: 
+    typingProf 10s steps(40, end) infinite alternate,
+    blink-caret .75s step-end infinite;
+}
+
+/* Efeito de digitar*/
+@keyframes typing {
+   0% {width: 0}
+   12% {width: 0}
+   28% {width: 100%}
+   72% {width: 100%}  
+   88% {width: 0}
+   100% {width: 0}
+   }
+
+@keyframes typingProf {
+   0% {width: 0}
+   28% {width: 0}
+   44% {width: 100%}
+   56% {width: 100%}
+   72% {width: 0} 
+   100% {width: 0}   
+}
+
+/*Cursor piscando */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--branco1); }
+}
+
+button{
+   color: var(--branco1);
+   background-color: rgba(256,256,256,0);
+   font-size: var(--fonte-media);
+   color: var(--branco1);
+   padding: var(--fonte-pequena);
+   border-radius: 30px;
+   height: 60px;
+   width: 150px;
+   border: 1px solid var(--branco1);
+   transition: 0.5s ease-in-out;
+}
+
+button:hover{
+   color: var(--cor-base2);
+   background-color: var(--branco1);
+   border: var(--cor-base2);
+   transform: scale(1.03);
+}
+
+.contraste{
+   background-color: rgba(120,120,120,0.5);
+   border-radius: 10px;
+   width: 60%;
+   padding: var(--fonte-pequena);
+}
+
+.apresentacao{
+   padding: var(--fonte-pequena);
+   text-align: center;
+   margin: 10vh auto;
+}
+
+.apresentacao p{
+   margin-bottom: var(--fonte-pequena);
+}
+
+.portfolio{
+   display: flex;
+   width:80%;
+   height: 95%;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   gap: 3vh;
+   padding: 2vh;
+}
+
+.celula{
+   width:20vw;
+   height: 20vw;
+   background-color: #888888;
+   border-radius: 15px;
+   background-blend-mode: multiply;
+   transition: 1s ease-out;
+}
+
+.primeira{
+   background-image: url("../img/RockTrunfo.png");
+   background-size: cover;
+   background-position: center;
+}
+
+.segunda{
+   background-image: url("../img/CaioFlix.png");
+   background-size: cover;
+   background-position: center;
+}
+
+.terceira{
+   background-image: url("../img/Mentalista.png");
+   background-size: cover;
+   background-position: center;
+}
+
+.quarta{
+   background-image: url("../img/Carteado.png");
+   background-size: cover;
+   background-position: center;
+}
+
+.quinta{
+   background-image: url("../img/Temperatura.png");
+   background-size: cover;
+   background-position: center;
+}
+
+.portfolio span{
+   color: var(--branco1);
+   text-shadow: 2px 2px var(--cor-base1);
+   display: block;
+   text-align: center;
+   transform: translateY(80px);
+   font-size: var(--fonte-media);
+   font-weight: bold;
+   background-color: rgba(120,120,120,0.5);
+   padding: 10px;
+}
+
+a{
+   text-decoration: none;
+}
+
+.celula:hover{
+   transform: scale(101%) translateY(-10px);
+   filter: brightness(150%);
+}
+
+.tres p{
+   text-align: center;
+   font-size: var(--fonte-media);
+   
+}
+
+.redes{
+   display: flex;
+   justify-content: center;
+   gap: 5vh;
+   width: 30vw;
+}
+
+.call{
+   width: 35vw;
+}
+
+.redes img{
+   width: 5vw;
+}
