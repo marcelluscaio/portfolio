@@ -1,3 +1,5 @@
+README EM CONSTRUÇÃO
+
 Pagina um
 Foto redonda
 Caio Cabral, desenvolvedor front end
@@ -20,6 +22,7 @@ Background diagonal
 
 Fazer letras pulando nomeu nome
 
+Referencias
 Quando reiniciar deve voltar pro inicio
 https://stackoverflow.com/questions/3664381/force-page-scroll-position-to-top-at-page-refresh-in-html
 
