@@ -301,7 +301,87 @@ a{
    width: 5vw;
 }
 
-@media (max-width:780px) {
+@media (max-width:800px) {
+   .foto-caio{
+      width: 40vh;
+      height: 40vh;
+      object-position: 0 -55px;
+      transform: translateX(0vw) translateY(12vh);
+   }
+
+   .info-basica{
+      transform: translateY(25vh);
+   }
+
+   .div-nome{
+      width: 7rem;
+   }
+
+   .info-basica p{
+      font-size: var(--fonte-pequena);
+   }   
+
+   .um button{
+      transform: translateY(10vh);
+   }
+
+   .dois{
+      padding: 0;
+   }
+
+   .dois .contraste{
+      width: 95%;
+   }
+
+   .apresentacao{
+      margin: 5vh auto;
+   }
+
+   .apresentacao p{
+      font-size: var(--fonte-pequena);
+   }
+
+   .quatro{
+      flex-direction: column-reverse;
+      justify-content: flex-end;
+      gap: 5vh;
+      padding-top: 2vh;
+   }
+
+   .portfolio{
+      width: 95%;
+      height: 80%;
+      align-items: center;
+   }
+
+   .portfolio .celula{
+      width: 23vmax;
+      height: 23vmax;
+      position: relative;
+   }
+
+   .portfolio span{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      font-weight: normal;
+      font-size: var(--fonte-pequena);
+   }
+
+   .call,
+   .redes{
+      width:80vw;
+   }
+
+   .redes img{
+      width: 20vw;
+   }
+}
+
+
+
+@media (max-width:420px) {
    .foto-caio{
       width: 52vw;
       height: 52vw;
@@ -355,8 +435,8 @@ a{
    }
 
    .portfolio .celula{
-      width: 40vw;
-      height: 40vw;
+      width: 23vmax;
+      height: 23vmax;
       position: relative;
    }
 
